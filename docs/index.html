@@ -19,7 +19,7 @@
 			border: solid 1px black;
 			text-align: center;
 			position: relative;
-			/* line-height: 30em; */
+			user-select: none;
 		}
 
 		#container {
@@ -28,7 +28,6 @@
 			width: 1800px;
 			height: 300px;
 			border: solid 2px #333;
-			/* margin: auto; */
 			margin: 100px auto;
 			position: relative;
 		}
@@ -668,95 +667,28 @@
 	</div>
 
 	<script type="text/javascript">
+		$(function () {
+			console.log($('.blac-key-text'))
+			$('.black-key-text').attr("hidden", "true");
+			$('.white-key-text').attr("hidden", "true");
+		})
 		//鼠标按下事件
-		$('li').mousedown(function () {
-			//拼接路径
-			var src = "./music/" + $(this).html().toLowerCase() + '.wav.mp3';
-			//创建媒体对象
-			var audio = new Audio(src);
-			//调用play方法
-			audio.play();
-			// 改变当前按键的颜色
-			$(this).css('background', '-moz-linear-gradient(top,#eee,#222)');
+		$('.black-key-face').mousedown(function () {
+			$(this)[0].firstElementChild.hidden = !$(this)[0].firstElementChild.hidden
 		})
-		//鼠标抬起事件
-		$('li').mouseup(function () {
-			//回复键盘的颜色
-			$(this).css('background', 'white');
+		$('.white-key-face').mousedown(function () {
+			$(this)[0].firstElementChild.hidden = !$(this)[0].firstElementChild.hidden
 		})
-
-		//mouseover  mouseout
-		$('li').hover(function () {
+		$('.black-key-face').hover(function () {
 			$(this).css('cursor', 'pointer');
 		}, function () {
 			$(this).css('cursor', 'default')
 		})
-
-		//键盘按下事件
-		$(window).keypress(function (e) {
-			//获取当前的按键
-			var k = e.key.toLowerCase();
-			//针对按键进行不同的操作
-			switch (k) {
-				case "q":
-					$('li:contains(C3)').mousedown();
-					break;
-				case "w":
-					$('li:contains(D3)').mousedown();
-					break;
-				case "e":
-					$('li:contains(F3)').mousedown();
-					break;
-				case "r":
-					$('li:contains(G3)').mousedown();
-					break;
-				case "t":
-					$('li:contains(A3)').mousedown();
-					break;
-				case "y":
-					$('li:contains(B3)').mousedown();
-					break;
-				case "u":
-					$('li:contains(C4)').mousedown();
-					break;
-				case "i":
-					$('li:contains(D4)').mousedown();
-					break;
-				case "o":
-					$('li:contains(E4)').mousedown();
-					break;
-				case "p":
-					$('li:contains(F4)').mousedown();
-					break;
-				case "[":
-					$('li:contains(G4)').mousedown();
-					break;
-				case "]":
-					$('li:contains(A4)').mousedown();
-					break;
-				case "\\":
-					$('li:contains(B4)').mousedown();
-					break;
-				case "pageup":
-					$('li:contains(C5)').mousedown();
-					break;
-				case "pagedown":
-					$('li:contains(D5)').mousedown();
-					break;
-				case "end":
-					$('li:contains(E5)').mousedown();
-					break;
-				default:
-					return false;
-			}
-			return false;
+		$('.white-key-face').hover(function () {
+			$(this).css('cursor', 'pointer');
+		}, function () {
+			$(this).css('cursor', 'default')
 		})
-
-		$(window).keyup(function () {
-			$('li').not('.black').css('background', 'white');
-		})
-
-
 	</script>
 </body>
 
