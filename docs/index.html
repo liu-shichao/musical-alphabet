@@ -664,45 +664,45 @@
 			</div>
 		</div>
 	</div>
-	<hr>
-	<p>1. 目前只试过在 win11 谷歌浏览器 下运行。</p>
-	<p>2. 使用方法：随便选一个按键，回忆是什么音名，然后单击那个按键，显示音名进行对照。</p>
-	<p>3. 快捷键 d 可以 （显示 / 隐藏） 全部音名。
-
-		<script type="text/javascript">
-			$(function () {
+	<div style="border-width: 0px; width: 800px; text-align: left; padding-left: 50px;" >
+		<p> 1. 目前只试过在 win11 谷歌浏览器 下运行。</p>
+		<p> 2. 使用方法：随便选一个按键，回忆是什么音名，然后单击那个按键，显示音名进行对照。</p>
+		<p> 3. 快捷键 d 可以 （显示 / 隐藏） 全部音名。
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			$('.black-key-text').attr("hidden", "true");
+			$('.white-key-text').attr("hidden", "true");
+		})
+		$(window).keyup(function () {
+			if ($('.black-key-text').attr("hidden") == undefined) {
 				$('.black-key-text').attr("hidden", "true");
+			} else {
+				$('.black-key-text').removeAttr("hidden")
+			}
+			if ($('.white-key-text').attr("hidden") == undefined) {
 				$('.white-key-text').attr("hidden", "true");
-			})
-			$(window).keyup(function () {
-				if ($('.black-key-text').attr("hidden") == undefined) {
-					$('.black-key-text').attr("hidden", "true");
-				} else {
-					$('.black-key-text').removeAttr("hidden")
-				}
-				if ($('.white-key-text').attr("hidden") == undefined) {
-					$('.white-key-text').attr("hidden", "true");
-				} else {
-					$('.white-key-text').removeAttr("hidden")
-				}
-			})
-			$('.black-key-face').mousedown(function () {
-				$(this)[0].firstElementChild.hidden = !$(this)[0].firstElementChild.hidden
-			})
-			$('.white-key-face').mousedown(function () {
-				$(this)[0].firstElementChild.hidden = !$(this)[0].firstElementChild.hidden
-			})
-			$('.black-key-face').hover(function () {
-				$(this).css('cursor', 'pointer');
-			}, function () {
-				$(this).css('cursor', 'default')
-			})
-			$('.white-key-face').hover(function () {
-				$(this).css('cursor', 'pointer');
-			}, function () {
-				$(this).css('cursor', 'default')
-			})
-		</script>
+			} else {
+				$('.white-key-text').removeAttr("hidden")
+			}
+		})
+		$('.black-key-face').mousedown(function () {
+			$(this)[0].firstElementChild.hidden = !$(this)[0].firstElementChild.hidden
+		})
+		$('.white-key-face').mousedown(function () {
+			$(this)[0].firstElementChild.hidden = !$(this)[0].firstElementChild.hidden
+		})
+		$('.black-key-face').hover(function () {
+			$(this).css('cursor', 'pointer');
+		}, function () {
+			$(this).css('cursor', 'default')
+		})
+		$('.white-key-face').hover(function () {
+			$(this).css('cursor', 'pointer');
+		}, function () {
+			$(this).css('cursor', 'default')
+		})
+	</script>
 </body>
 
 </html>
