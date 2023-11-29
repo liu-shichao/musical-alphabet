@@ -21,4 +21,5 @@ https://liu-shichao.github.io/musical-alphabet/
 7. 音名中降号符号输入法一直没能打出来，是从网上找了一个直接复制粘贴过去的。
 
 ### 参考：
-1.https://gitcode.com/mirrors/inanyworld/javascript-piano/tree/main
+1. https://gitcode.com/mirrors/inanyworld/javascript-piano/tree/main
+2. 【零基础学音乐·自学乐理】5-音名、钢琴键盘: https://www.bilibili.com/video/BV1Ay4y1r7JF/?spm_id_from=333.788&vd_source=55a350b8650fa259fcd33c6529c36cf5
