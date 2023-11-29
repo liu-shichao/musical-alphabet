@@ -1,3 +1,6 @@
+### 源码：
+docs文件夹里是源码，就一个 index.html 文件
+
 ### 演示地址：
 
 https://liu-shichao.github.io/musical-alphabet/
