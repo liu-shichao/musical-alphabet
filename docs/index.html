@@ -75,9 +75,11 @@
 		.white-showName {
 			color: rgba(0, 0, 0, 255);
 		}
+
 		.black-showName {
 			color: rgba(255, 255, 255, 255);
 		}
+
 		.black-key-face:active {
 			color: rgba(255, 255, 255, 255);
 			cursor: none;
@@ -99,6 +101,19 @@
 			position: absolute;
 			text-align: center;
 		}
+		
+		.red-dot {
+			width: 20px;
+			height: 20px;
+			background-color: rgb(240, 84, 102);
+			border-radius: 10px;
+			position: absolute;
+			bottom: 10%;
+			/* margin: 10%, auto; */
+			left: 50%;
+			border-width: 0px;
+    		transform: translateX(-50%);
+		}
 	</style>
 	<script type="text/javascript" src="jquery-1.8.3.js"></script>
 </head>
@@ -110,6 +125,7 @@
 				<div class="white-key-text">
 					A<sub>2</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -117,6 +133,7 @@
 				<div class="white-key-text">
 					B<sub>2</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -124,6 +141,7 @@
 				<div class="white-key-text">
 					C<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -131,6 +149,7 @@
 				<div class="white-key-text">
 					D<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -138,6 +157,7 @@
 				<div class="white-key-text">
 					E<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -145,6 +165,7 @@
 				<div class="white-key-text">
 					F<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -152,6 +173,7 @@
 				<div class="white-key-text">
 					G<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -159,6 +181,7 @@
 				<div class="white-key-text">
 					A<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -166,6 +189,7 @@
 				<div class="white-key-text">
 					B<sub>1</sub>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -173,6 +197,7 @@
 				<div class="white-key-text">
 					C
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -180,6 +205,7 @@
 				<div class="white-key-text">
 					D
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -187,6 +213,7 @@
 				<div class="white-key-text">
 					E
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -194,6 +221,7 @@
 				<div class="white-key-text">
 					F
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -201,6 +229,7 @@
 				<div class="white-key-text">
 					G
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -208,6 +237,7 @@
 				<div class="white-key-text">
 					A
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -215,6 +245,7 @@
 				<div class="white-key-text">
 					B
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -222,6 +253,7 @@
 				<div class="white-key-text">
 					c
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -229,6 +261,7 @@
 				<div class="white-key-text">
 					d
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -236,6 +269,7 @@
 				<div class="white-key-text">
 					e
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -243,6 +277,7 @@
 				<div class="white-key-text">
 					f
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -250,6 +285,7 @@
 				<div class="white-key-text">
 					g
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -257,6 +293,7 @@
 				<div class="white-key-text">
 					a
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -264,6 +301,7 @@
 				<div class="white-key-text">
 					b
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -271,6 +309,7 @@
 				<div class="white-key-text">
 					c<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -278,6 +317,7 @@
 				<div class="white-key-text">
 					d<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -285,6 +325,7 @@
 				<div class="white-key-text">
 					e<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -292,6 +333,7 @@
 				<div class="white-key-text">
 					f<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -299,6 +341,7 @@
 				<div class="white-key-text">
 					g<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -306,6 +349,7 @@
 				<div class="white-key-text">
 					a<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -313,6 +357,7 @@
 				<div class="white-key-text">
 					b<sup>1</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -320,6 +365,7 @@
 				<div class="white-key-text">
 					c<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -327,6 +373,7 @@
 				<div class="white-key-text">
 					d<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -334,6 +381,7 @@
 				<div class="white-key-text">
 					e<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -341,6 +389,7 @@
 				<div class="white-key-text">
 					f<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -348,6 +397,7 @@
 				<div class="white-key-text">
 					g<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -355,6 +405,7 @@
 				<div class="white-key-text">
 					a<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -362,6 +413,7 @@
 				<div class="white-key-text">
 					b<sup>2</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -369,6 +421,7 @@
 				<div class="white-key-text">
 					c<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -376,6 +429,7 @@
 				<div class="white-key-text">
 					d<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -383,6 +437,7 @@
 				<div class="white-key-text">
 					e<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -390,6 +445,7 @@
 				<div class="white-key-text">
 					f<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -397,6 +453,7 @@
 				<div class="white-key-text">
 					g<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -404,6 +461,7 @@
 				<div class="white-key-text">
 					a<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -411,6 +469,7 @@
 				<div class="white-key-text">
 					b<sup>3</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -418,6 +477,7 @@
 				<div class="white-key-text">
 					c<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -425,6 +485,7 @@
 				<div class="white-key-text">
 					d<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -432,6 +493,7 @@
 				<div class="white-key-text">
 					e<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -439,6 +501,7 @@
 				<div class="white-key-text">
 					f<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -446,6 +509,7 @@
 				<div class="white-key-text">
 					g<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -453,6 +517,7 @@
 				<div class="white-key-text">
 					a<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -460,6 +525,7 @@
 				<div class="white-key-text">
 					b<sup>4</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div>
@@ -467,12 +533,14 @@
 				<div class="white-key-text">
 					c<sup>5</sup>
 				</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px +  0 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#A<sub>2</sub><br>♭B<sub>2</sub></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -480,30 +548,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  0 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#C<sub>1</sub><br>♭D<sub>1</sub></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  0 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#D<sub>1</sub><br>♭E<sub>1</sub></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  0 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#F<sub>1</sub><br>♭G<sub>1</sub> </div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  0 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#G<sub>1</sub><br>♭A<sub>1</sub></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  0 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#A<sub>1</sub><br>♭B<sub>1</sub></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -511,30 +584,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  1 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#C<br>♭D</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  1 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#D<br>♭E</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  1 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#F<br>♭G</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  1 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#G<br>♭A</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  1 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#A<br>♭B</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -542,30 +620,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  2 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#c<br>♭d</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  2 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#d<br>♭e</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  2 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#f<br>♭g</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  2 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#g<br>♭a</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  2 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#a<br>♭b</div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -573,30 +656,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  3 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#c<sup>1</sup><br>♭d<sup>1</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  3 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#d<sup>1</sup><br>♭e<sup>1</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  3 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#f<sup>1</sup><br>♭g<sup>1</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  3 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#g<sup>1</sup><br>♭a<sup>1</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  3 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#a<sup>1</sup><br>♭b<sup>1</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -604,30 +692,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  4 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#c<sup>2</sup><br>♭d<sup>2</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  4 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#d<sup>2</sup><br>♭e<sup>2</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  4 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#f<sup>2</sup><br>♭g<sup>2</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  4 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#g<sup>2</sup><br>♭a<sup>2</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  4 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#a<sup>2</sup><br>♭b<sup>2</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -635,30 +728,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  5 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#c<sup>3</sup><br>♭d<sup>3</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  5 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#d<sup>3</sup><br>♭e<sup>3</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  5 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#f<sup>3</sup><br>♭g<sup>3</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  5 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#g<sup>3</sup><br>♭a<sup>3</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  5 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#a<sup>3</sup><br>♭b<sup>3</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 
@@ -666,30 +764,35 @@
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  6 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2);">
 			<div class="black-key-face">
 				<div class="black-key-text">#c<sup>4</sup><br>♭d<sup>4</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  6 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#d<sup>4</sup><br>♭e<sup>4</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  6 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 3 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#f<sup>4</sup><br>♭g<sup>4</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  6 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 4 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#g<sup>4</sup><br>♭a<sup>4</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 		<div class="black"
 			style="left: calc( 2px + 1.9230769230769230769230769230769% * 2 +  6 * (1.9230769230769230769230769230769% * 7)  + 1.9230769230769230769230769230769% / 2 + 5 * 1.9230769230769230769230769230769%);">
 			<div class="black-key-face">
 				<div class="black-key-text">#a<sup>4</sup><br>♭b<sup>4</sup></div>
+				<div class="red-dot"></div>
 			</div>
 		</div>
 	</div>
@@ -699,6 +802,32 @@
 		<p> 3. 快捷键 d 可以 （显示 / 隐藏） 全部音名。</p>
 	</div>
 	<script type="text/javascript">
+		$(function(){
+			$('.red-dot').hide();
+			chooseNextRedDot();
+		})
+		function chooseNextRedDot() {
+			var r1 = Math.floor(Math.random() * 10);
+			var r_white = Math.floor(Math.random() * 100) % 52;
+			var r_black = Math.floor(Math.random() * 100) % 36;
+			console.log(r1, r_white, r_black)
+			if (r1 % 2) {
+				console.log('black')
+				$('#container').find('.black-key-face').eq(r_black).children('.red-dot').show();
+			} else {
+				console.log('white')
+				$('#container').find('.white-key-face').eq(r_white).children('.red-dot').show();
+			}
+		}
+		$('.black-key-face').mousedown(function(){
+			$(this).children('.red-dot').hide();
+			chooseNextRedDot();
+		})
+		$('.white-key-face').mousedown(function(){
+			console.log('123');
+			$(this).children('.red-dot').hide();
+			chooseNextRedDot();
+		})
 		//键盘按下事件
 		$(window).keypress(function (e) {
 			//获取当前的按键
