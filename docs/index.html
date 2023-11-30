@@ -35,7 +35,7 @@
 		.white-key-face {
 			height: 100%;
 			width: 100%;
-			color: rgba(0, 0, 0, 0);
+			color: rgba(0, 0, 0, 255);
 		}
 
 		.white-key-face:hover {
@@ -44,7 +44,6 @@
 		}
 
 		.white-key-face:active {
-			color: rgba(0, 0, 0, 255);
 			cursor: none;
 		}
 
@@ -72,24 +71,23 @@
 			pointer-events: auto;
 		}
 
-		.white-showName {
+		/* .white-showName {
 			color: rgba(0, 0, 0, 255);
 		}
 
 		.black-showName {
 			color: rgba(255, 255, 255, 255);
-		}
+		} */
 
 		.black-key-face:active {
-			color: rgba(255, 255, 255, 255);
+			/* color: rgba(255, 255, 255, 255); */
 			cursor: none;
-			pointer-events: auto;
 		}
 
 		.black-key-face {
 			height: 100%;
 			width: 100%;
-			color: rgba(255, 255, 255, 0);
+			color: rgba(255, 255, 255, 255);
 			background: #000;
 		}
 
@@ -809,12 +807,14 @@
 	</div>
 	<div style="border-width: 0px; width: 1000px; text-align: left; padding-left: 50px;">
 		<p> 1. 目前只试过在 win11 谷歌浏览器 下运行。</p>
-		<p> 2. 使用方法：根据随机出现的红点，回忆是什么音名，然后单击那个按键查看音名。</p>
+		<p> 2. 使用方法：根据随机出现的红点，回忆是什么音名，然后点击按住那个键查看音名，松开鼠标后两秒音名消失。</p>
 		<p> 3. 快捷键 d 可以 （显示 / 隐藏） 全部音名。</p>
 	</div>
 	<script type="text/javascript">
 		$(function () {
 			$('.red-dot').hide();
+			$('.black-key-text').hide();
+			$('.white-key-text').hide();
 			chooseNextRedDot();
 		})
 		function chooseNextRedDot() {
@@ -831,16 +831,26 @@
 			}
 		}
 		$('.black-key-face').mousedown(function () {
+			$(this).children('.black-key-text').fadeIn(100);
 			if ($(this).children('.red-dot').is(':visible')) {
 				$(this).children('.red-dot').hide(300);
 				chooseNextRedDot();
 			}
 		})
 		$('.white-key-face').mousedown(function () {
+			$(this).children('.white-key-text').fadeIn(100);
 			if ($(this).children('.red-dot').is(':visible')) {
 				$(this).children('.red-dot').hide(300);
 				chooseNextRedDot();
 			}
+		})
+		$('.black-key-face').mouseup(function () {
+			$(this).children('.black-key-text').fadeOut(2000);
+
+		})
+		$('.white-key-face').mouseup(function () {
+			$(this).children('.white-key-text').fadeOut(2000);
+
 		})
 		var show_all_name = false;
 		//键盘按下事件
@@ -850,8 +860,8 @@
 			//针对按键进行不同的操作
 			switch (k) {
 				case "d":
-					$('.black-key-text').toggleClass('black-showName');
-					$('.white-key-text').toggleClass('white-showName');
+					$('.black-key-text').fadeToggle(300);
+					$('.white-key-text').fadeToggle(300);
 					if (show_all_name) {
 						chooseNextRedDot();
 					} else {
