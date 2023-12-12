@@ -9,9 +9,11 @@
 			margin: 0px;
 			padding: 0px;
 		}
-
+		a {
+			text-decoration: none;
+			color: #666;
+		}
 		div {
-			float: left;
 			width: calc(1.9230769230769230769230769230769% - 2px);
 			height: 100%;
 			background: #fff;
@@ -805,11 +807,12 @@
 			</div>
 		</div>
 	</div>
-	<div style="border-width: 0px; width: 1000px; text-align: left; padding-left: 50px;">
+	<div style="margin-bottom: 60px; border-width: 0px; width: 1000px; text-align: left; padding-left: 50px; float: none; clear: both;">
 		<p> 1. 目前只试过在 win11 谷歌浏览器 下运行。</p>
 		<p> 2. 使用方法：根据随机出现的红点，回忆是什么音名，然后点击按住那个键查看音名，松开鼠标后两秒音名消失。</p>
 		<p> 3. 快捷键 d 可以 （显示 / 隐藏） 全部音名。</p>
 	</div>
+	<span style="margin-left: 30px;">其他工具：<a href="https://liu-shichao.github.io/solfeggio/">唱名练习工具</a></span>
 	<script type="text/javascript">
 		$(function () {
 			$('.red-dot').hide();
